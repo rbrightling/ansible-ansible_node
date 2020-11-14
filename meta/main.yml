@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: ansible_node
   author: Robert Brightling
   description: Install basic requirements to manage node with ansible using the raw module.
 
