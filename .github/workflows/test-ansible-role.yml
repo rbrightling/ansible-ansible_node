@@ -25,3 +25,6 @@ jobs:
           pip install tox
       - name: run tox tests
         run: tox
+        env:
+          PY_COLORS: '1'
+          ANSIBLE_FORCE_COLOR: '1'
