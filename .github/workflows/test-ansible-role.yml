@@ -23,9 +23,5 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install tox
-      - name: remove current directory ansible prefix
-        run: |
-          echo $(pwd) | grep -q 'ansible-' && mv $(pwd) $(echo "$(pwd)" | sed 's/ansible-//1')
-          cd .
       - name: run tox tests
         run: tox
