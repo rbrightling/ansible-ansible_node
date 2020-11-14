@@ -1,0 +1,5 @@
+---
+# Tasks for CentOS
+
+- name: import the RedHat Tasks
+  import_tasks: rhel.yml
