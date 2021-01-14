@@ -17,4 +17,3 @@ jobs:
           ansible-galaxy role import --api-key  "$API_KEY" $( echo ${GITHUB_REPOSITORY} | awk -F / '{print $1}') $( echo ${GITHUB_REPOSITORY} | awk -F / '{print $2}' | sed -e "s/^ansible-//")
         env:
           API_KEY: ${{ secrets.GALAXY_API_KEY }}
-
