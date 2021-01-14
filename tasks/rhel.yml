@@ -20,6 +20,7 @@
   register: command_check_selinux
   failed_when: false
   changed_when: false
+  check_mode: false
 
 - name: install python selinux module
   dnf:
