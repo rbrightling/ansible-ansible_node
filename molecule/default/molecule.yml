@@ -7,7 +7,7 @@ lint: |
   ansible-lint
   flake8
 driver:
-  name: podman
+  name: "${MOLE_DRIVER:-podman}"
 platforms:
   - name: instance
     image: "${MOLECULE_IMAGE:-debian:latest}"
