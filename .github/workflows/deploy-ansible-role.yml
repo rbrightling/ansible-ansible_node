@@ -1,13 +1,10 @@
 ---
 name: Deploy Ansible Role to Galaxy
 
-on: 
-  workflow_run:
-    workflows: ["Test Ansible Role"]
+on:
+  push:
     tags:
-      - "*"
-    types:
-      - completed
+      - '*'
 
 jobs:
   galaxy_import:
