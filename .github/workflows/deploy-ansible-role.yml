@@ -1,5 +1,5 @@
 ---
-Name: Deploy Ansible Role to Galaxy
+name: Deploy Ansible Role to Galaxy
 
 on: 
   workflow_run:
